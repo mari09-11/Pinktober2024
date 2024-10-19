@@ -8,7 +8,7 @@ Our solution for this challenge consisted in using a **Random Forest classifier*
 The choice of the algorithm has been done after having experimented on other algorithms and compareded their performances 
 
 ## Challenge 2 :
-For this challenge, we made a deep learning CNN image classifier. We first started by importing the necessary libraries and loading our data, in order to be able to explore our data and get a clearer look on how the dataset is, then we scaled our data and constructed our model, we trained our model and then tested it on a few cases and finally generalized to the whole test set.
+For this challenge, we made a **deep learning CNN image classifier**. We first started by importing the necessary libraries and loading our data, in order to be able to explore our data and get a clearer look on how the dataset is, then we scaled our data and constructed our model, we trained our model and then tested it on a few cases and finally generalized to the whole test set.
 For building our model, we have experimented with multiple layer architectures until we reached the one that performed best 
 
 ## Challenge 3 :
