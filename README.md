@@ -43,3 +43,18 @@ For building our model, we have experimented with multiple layer architectures u
 The third challenge is making a machine learning model for predicting the survival rate of breast cancer patients.
 For this challenge, we have used ** ** to train our model, using the date tha we have explored then preprocessed and made sure it's ready to give the best performance.
 After having tried many algorithms on this set of training data we have come to this choice of algorithm, for it having the best performance.
+
+1. Loading and Preprocessing the Data
+The training dataset is loaded and the target variable Survival_Status is converted into a categorical format.
+The feature matrix is created by excluding the target variable and the Patient_ID.
+Numeric features are standardized using a scaler, and categorical features are one-hot encoded.
+2. Building the MLP Model
+A Multi-Layer Perceptron (MLP) model is configured with one hidden layer containing 32 neurons. The model is trained with a maximum of 10 epochs and includes L2 regularization with a penalty value of 1.0.
+The model is built using a pipeline that combines the preprocessing steps and the MLP classifier to streamline the process.
+3. Training the Model
+The MLP model is trained using the feature matrix and the target variable from the training dataset. The preprocessing steps are applied automatically during the training process.
+4. Making Predictions
+The test dataset is loaded, and predictions are generated using the trained MLP model.
+The Patient_ID is retained, and the predicted Survival_Status is generated for each entry in the test dataset.
+5. Generating the Submission File
+A submission file is created by combining the predicted Survival_Status with the Patient_ID. The results are saved in a CSV file for further evaluation or submission.
